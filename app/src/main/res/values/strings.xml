@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mon_De</string>
+    <string name="le_d_num_rique_hmid">Le dé numérique Hmid</string>
+    <string name="nombre" />
+    <string name="c_est_la_face_obtenue">C\'est la face obtenue</string>
+    <string name="relancer">Relancer</string>
+    <string name="mon_de">mon_de</string>
+    <string name="activitedeux">activite_deux</string>
 </resources>

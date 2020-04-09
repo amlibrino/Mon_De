@@ -4,12 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/mon_icon"
-        android:label="@string/app_name"
+        android:icon="@mipmap/imgde"
+        android:label="@string/mon_de"
         android:roundIcon="@mipmap/mon_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AfficheResultatActivity"></activity>
+        <activity android:name=".AfficheResultatActivity"
+            android:label="@string/activitedeux"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

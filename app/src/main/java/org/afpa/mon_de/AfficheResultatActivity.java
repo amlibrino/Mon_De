@@ -25,21 +25,25 @@ public class AfficheResultatActivity extends AppCompatActivity implements View.O
         //récuperer les infos de l'intent
         Intent intent = getIntent();
         nbfaces = intent.getIntExtra(MainActivity.EXTRA_MESSAGE, 1);
-
+        relancer = findViewById(R.id.relancer);
+        relancer.setOnClickListener(this);
+        launch();
+    }
+    private void launch(){
         //afficher le text
         text = findViewById(R.id.text);
         text.setText("Pour un Dé à "+nbfaces+" Faces");
         resultat = findViewById(R.id.resultat);
-        this.resultat.setText((int) ((Math.random()*(nbfaces-1))+1));//utilisation du random en java
-        relancer = findViewById(R.id.relancer);
-        relancer.setOnClickListener(this);
+        //this.resultat.setText((int) ((Math.random()*(nbfaces-1))+1));//utilisation du random en java
+        int result=(int) (Math.random()*(nbfaces-1))+1;
+        this.resultat.setText(String.valueOf(result));
+
     }
 
     @Override
     public void onClick(View v) {
         if (v == relancer){
-
+            launch();
         }
-
     }
 }
